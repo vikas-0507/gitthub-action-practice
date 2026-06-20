@@ -21,9 +21,7 @@ jobs:
 say-hello:
 runs-on: ubuntu-latest
 
-```
 # that ephermal container will have steps to executes , hence those name contain run command: run has the command
 steps:
   - name: say hello to vikas
     run: echo "hello dosto"
-```
