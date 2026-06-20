@@ -1,0 +1,26 @@
+# Workflow
+ #should have name 
+ name: Vikas
+ #on tells when the workflow should run (indentation by using tab)
+ on:
+   workflow_dispatch:
+     
+   push:
+# Jobs # it tell what the workflow should do, there can be one or more than one jobs, hence we write jobs
+  # should be inside the workflow
+ jobs:
+   say-hello:
+     runs-on: ubuntu-latest
+     # that ephermal container will have steps to executes , hence those name contain run command: run has the command
+     steps:
+       -name: say hello to vikas
+        run:echo "hello dosto"
+# Steps
+
+  #should be inside the job
+
+# Actions
+  # should be inside the steps.
+
+  
+
