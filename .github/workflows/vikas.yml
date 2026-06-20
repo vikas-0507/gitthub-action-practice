@@ -1,27 +1,12 @@
-# Workflow
-
-# should have name
-
 name: Vikas
 
-# on tells when the workflow should run (indentation by using tab)
-
 on:
-workflow_dispatch:
-
-push:
-
-# Jobs
-
-# it tell what the workflow should do, there can be one or more than one jobs, hence we write jobs
-
-# should be inside the workflow
+  workflow_dispatch:
 
 jobs:
-say-hello:
-runs-on: ubuntu-latest
+  say-hello:
+    runs-on: ubuntu-latest
 
-# that ephermal container will have steps to executes , hence those name contain run command: run has the command
-steps:
-  - name: say hello to vikas
-    run: echo "hello dosto"
+    steps:
+      - name: Say hello
+        run: echo "hello dosto"
